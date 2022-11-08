@@ -146,8 +146,8 @@ EMAIL_PORT = 587
 # Go to manage.py and type import dotenv
 # Now using '.env' file's variables
 
-# EMAIL_HOST_USER = "pintu@logicrays.com"
-EMAIL_HOST_PASSWORD = "A4ma4m!@!@Python"
+# EMAIL_HOST_USER = "ssdfs"
+EMAIL_HOST_PASSWORD = "sadasdasd"
 # EMAIL_HOST_USER = os.environ.get('EMAIL_FROM')
 # EMAIL_HOST_PASSWORD = os.environ.get("EMAIL_PASSWORD")
 EMAIL_USE_TLS = True
