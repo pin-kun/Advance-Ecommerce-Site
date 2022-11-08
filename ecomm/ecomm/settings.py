@@ -135,3 +135,27 @@ STATICFILES_DIRS = [
 MESSAGE_TAGS = {
     messages.ERROR: 'danger'
 }
+
+# EMAIL SETTINGS
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_PORT = 587
+
+# We won't put Email and password here. Instead we will use 'django-dotenv' to save email and password. for security purpose
+# for that install: pip install django-dotenv
+# Go to manage.py and type import dotenv
+# Now using '.env' file's variables
+
+# EMAIL_HOST_USER = "pintu@logicrays.com"
+EMAIL_HOST_PASSWORD = "A4ma4m!@!@Python"
+# EMAIL_HOST_USER = os.environ.get('EMAIL_FROM')
+# EMAIL_HOST_PASSWORD = os.environ.get("EMAIL_PASSWORD")
+EMAIL_USE_TLS = True
+
+
+# If for some reason above 'EMAIL_HOST_USER' and 'EMAIL_HOST_PASSWORD' doesn't work or shows error like password not accepted.
+# Then for testing purpose you can put your email and password here and test it
+# Not recommended for production. Put email and password here if you are testing locally
+
+# EMAIL_HOST_USER = "youremail@gmail.com"
+# EMAIL_HOST_PASSWORD = "yourpassword"

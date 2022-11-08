@@ -1,0 +1,9 @@
+<!-- If we use autoescape tag, It will autoescape that particular things. Even if we refresh the page, same thing won't happen -->
+{% autoescape off %}
+
+Hi {{user.username}}
+Please click this below link to verify your account
+
+http://{{domain}}{% url 'activate' uidb64=uid token=token %}
+
+{% endautoescape %}
